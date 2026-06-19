@@ -179,7 +179,7 @@ export default function PreKActivityPlanner() {
     }
   }
 
-  const bandLabel = ageBand === "4-K" ? "4 years - Kindergarten (VPK)" : "3 - 4 years";
+  const bandLabel = "4 years - Kindergarten (VPK)";
 
   return (
     <div style={{ background: C.paper, color: C.ink, minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
@@ -195,11 +195,11 @@ export default function PreKActivityPlanner() {
           draft activities that cite them, and verify every citation before anything reaches you.
         </p>
 
-        <div style={{ background: C.marigoldSoft, border: `1px solid ${C.line}`, borderRadius: 10, padding: "10px 12px", fontSize: 13, color: "#8a6418", display: "flex", gap: 8, marginBottom: 22 }}>
-          <AlertTriangle size={16} style={{ flexShrink: 0, marginTop: 1 }} />
+        <div style={{ background: C.tealSoft, border: `1px solid ${C.line}`, borderRadius: 10, padding: "10px 12px", fontSize: 13, color: C.tealDark, display: "flex", gap: 8, marginBottom: 22 }}>
+          <ShieldCheck size={16} style={{ flexShrink: 0, marginTop: 1 }} />
           <span>
-            Demo runs on <strong>sample benchmarks</strong>. Swap in the official Florida FELDS data
-            (same format, in lib/benchmarks.js) before sharing with the center.
+            Built on a curated subset of the official <strong>Florida FELDS</strong> standards
+            (4 years - Kindergarten, 2017).
           </span>
         </div>
 
@@ -219,7 +219,6 @@ export default function PreKActivityPlanner() {
               style={{ border: `1px solid ${C.line}`, borderRadius: 10, padding: "11px 13px", fontSize: 14, background: C.paper, color: C.ink }}
             >
               <option value="4-K">4 yrs - Kindergarten</option>
-              <option value="3-4">3 - 4 years</option>
             </select>
             <button
               onClick={run}
