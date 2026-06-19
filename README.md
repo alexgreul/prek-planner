@@ -4,7 +4,7 @@ A tool that helps Pre-K teachers turn a classroom theme into developmentally
 appropriate activities — each one tied to specific Florida early-learning
 standards, with every citation verified before it reaches the teacher.
 
-Built for [name the early learning center] to cut the time teachers spend
+Built for Peace Lutheran Early Learning Center to cut the time teachers spend
 hunting through the standards while lesson planning.
 
 ## The problem
